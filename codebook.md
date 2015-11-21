@@ -75,7 +75,7 @@ To name the columns in feature data frame, we take the data from the ./UCI HAR D
  After creating the three preceding data frame, we combine subject data frame on the left with the feature data frame by column 
  generating my_dataset data frame. This data frame is column combined with activity data frame on the right to create the final data frame : my_df1 
  
- 2. The value in the activity column have been renamed with the descriptive activity names as follow:
+2. The value in the activity column have been renamed with the descriptive activity names as follow:
    * 1 -> WALKING, 
    * 2 -> WALKING_UPSTAIRS
    * 3 -> WALKING_DOWNSTAIRS
