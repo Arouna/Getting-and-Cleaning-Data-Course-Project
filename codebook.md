@@ -60,28 +60,28 @@ In this analysis, we have not use any data included in the inertia folder
 
 ## Transformation details
 
-There are 5 parts:
+There are 3 parts:
 
 1. Merges the training and the test sets to create one data set.
 In this part we begin by:
- 1.1 - Creating the feature data frame combining 2 data frame :train data frame feature  and test frame feature by rows. 
+  * 1.1 - Creating the feature data frame combining 2 data frames :train data frame feature  and test frame feature by rows. 
 We obtain train data frame feature  and test frame feature respectively from the files ./UCI HAR Dataset/test/X_test.txt and ./UCI HAR Dataset/train/X_train.txt.
 To name the columns in feature data frame, we take the data from the ./UCI HAR Dataset/features.txt file
 
- 1.2 - Combining train activity and test activity in order to  build the activity data frame which contain just one column
+  * 1.2 - Combining train activity and test activity in order to  build the activity data frame which contain just one column
 
- 1.3 - Combining train subject and test subject in order to  build the subject data frame which contain just one column
+  * 1.3 - Combining train subject and test subject in order to  build the subject data frame which contain just one column
 
  After creating the three preceding data frame, we combine subject data frame on the left with the feature data frame by column 
  generating my_dataset data frame. This data frame is column combined with activity data frame on the right to create the final data frame : my_df1 
  
  2. The value in the activity column have been renamed with the descriptive activity names as follow:
-    1 -> WALKING, 
-	2 -> WALKING_UPSTAIRS
-    3 -> WALKING_DOWNSTAIRS
-	4 -> SITTING
-	5 -> STANDING
-	6 -> LAYING
+   * 1 -> WALKING, 
+   * 2 -> WALKING_UPSTAIRS
+   * 3 -> WALKING_DOWNSTAIRS
+   * 4 -> SITTING
+   * 5 -> STANDING
+   * 6 -> LAYING
 
 3. Labelling the data set with descriptive variable names
 To do this all minus "-" has been replaced with with  underscore "_" in all column name and the X, Y and Z suffix in all column name 
